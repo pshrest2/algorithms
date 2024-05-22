@@ -1,4 +1,4 @@
-# Introduction to Algorithms ![example workflow](https://github.com/pshrest2/algorithms/actions/workflows/ci.yaml/badge.svg)
+# Introduction to Algorithms ![ci workflow](https://github.com/pshrest2/algorithms/actions/workflows/ci.yaml/badge.svg)
 
 ![alt text](public/image.png)
 
