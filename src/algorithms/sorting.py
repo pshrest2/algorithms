@@ -54,3 +54,31 @@ def insertion_sort(a: list[int | float], desc: Optional[bool] = False):
             a[j + 1] = a[j]
             j -= 1
         a[j + 1] = key
+
+
+def merge(a, left, mid, right):
+    left_temp = a[left : mid + 1]
+    right_temp = a[mid + 1 : right + 1]
+
+    i = 0
+    j = 0
+    index = left
+    while i < len(left_temp) and j < len(right_temp):
+        if left_temp[i] <= right_temp[j]:
+            a[index] = left_temp[i]
+            i += 1
+        else:
+            a[index] = right_temp[j]
+            j += 1
+
+        index += 1
+
+    while i < len(left_temp):
+        a[index] = left_temp[i]
+        index += 1
+        i += 1
+
+    while j < len(right_temp):
+        a[index] = right_temp[j]
+        index += 1
+        j += 1
