@@ -1,1 +1,1 @@
-from .sorting import insertion_sort
+from .sorting import insertion_sort, selection_sort

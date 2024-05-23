@@ -1,9 +1,9 @@
 import pytest
 
-from src.algorithms import insertion_sort
+from src.algorithms import insertion_sort, selection_sort
 
 
-@pytest.fixture(params=[insertion_sort])
+@pytest.fixture(params=[insertion_sort, selection_sort])
 def sort_method(request):
     return request.param
 
